@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="RadarTeletrabajo te ayuda a analizar ofertas de empleo remoto y generar prompts inteligentes para mejorar tu búsqueda de trabajo."
+    >
+
+    <title>RadarTeletrabajo | Analiza el mercado antes de enviar tu CV</title>
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- ========================================
+         HEADER
+    ========================================= -->
+
+    <header class="site-header">
+
+        <div class="container header-container">
+
+            <a href="#" class="brand" aria-label="RadarTeletrabajo - Inicio">
+
+                <span class="brand-icon">🛰️</span>
+
+                <span class="brand-name">
+                    Radar<span>Teletrabajo</span>
+                </span>
+
+            </a>
+
+
+            <div class="version">
+                v1.0
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ========================================
+         CONTENIDO PRINCIPAL
+    ========================================= -->
+
+    <main>
+
+
+        <!-- ========================================
+             HERO
+        ========================================= -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+                        🧭 Ruta TI · Herramienta gratuita
+                    </div>
+
+
+                    <h1>
+                        Analiza el mercado
+                        <span>antes de enviar tu CV.</span>
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Define tu objetivo, compara ofertas reales y genera
+                        un prompt inteligente para descubrir qué busca
+                        realmente el mercado.
+
+                    </p>
+
+
+                    <button
+                        class="btn btn-primary"
+                        id="startAnalysis"
+                        type="button"
+                    >
+
+                        <span>Comenzar análisis</span>
+
+                        <span class="btn-icon">↓</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             SISTEMA DE ANÁLISIS
+        ========================================= -->
+
+        <section
+            class="analysis-section"
+            id="analysis"
+        >
+
+            <div class="container">
+
+
+                <!-- Encabezado -->
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow">
+                        SISTEMA DE ANÁLISIS
+                    </span>
+
+                    <h2>
+                        Construye tu radar de oportunidades
+                    </h2>
+
+                    <p>
+
+                        Completa los siguientes pasos con información real.
+                        Cuanto mejor conozcas tu mercado, mejores decisiones
+                        podrás tomar.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- ========================================
+                     PASO 1
+                ========================================= -->
+
+                <section
+                    class="analysis-step"
+                    id="stepObjective"
+                >
+
+                    <div class="step-header">
+
+                        <div class="step-number">
+                            1
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Define tu objetivo
+                            </h3>
+
+                            <p>
+                                ¿Qué tipo de oportunidad estás buscando?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-grid">
+
+
+                        <!-- Rol -->
+
+                        <div class="form-group form-group-full">
+
+                            <label for="jobRole">
+                                Rol objetivo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="jobRole"
+                                name="jobRole"
+                                placeholder="Ej. Administrador de Sistemas Junior"
+                                autocomplete="organization-title"
+                            >
+
+                            <small>
+                                Intenta definir un único rol principal.
+                            </small>
+
+                        </div>
+
+
+
+                        <!-- Nivel -->
+
+                        <div class="form-group">
+
+                            <label for="experienceLevel">
+                                Nivel de experiencia
+                            </label>
+
+                            <select
+                                id="experienceLevel"
+                                name="experienceLevel"
+                            >
+
+                                <option value="">
+                                    Selecciona una opción
+                                </option>
+
+                                <option value="Sin experiencia">
+                                    Sin experiencia
+                                </option>
+
+                                <option value="Estudiante">
+                                    Estudiante
+                                </option>
+
+                                <option value="Prácticas">
+                                    Buscando prácticas
+                                </option>
+
+                                <option value="Junior">
+                                    Junior
+                                </option>
+
+                                <option value="Intermedio">
+                                    Intermedio
+                                </option>
+
+                                <option value="Senior">
+                                    Senior
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- Mercado -->
+
+                        <div class="form-group">
+
+                            <label for="targetMarket">
+                                Mercado objetivo
+                            </label>
+
+                            <select
+                                id="targetMarket"
+                                name="targetMarket"
+                            >
+
+                                <option value="">
+                                    Selecciona una opción
+                                </option>
+
+                                <option value="España">
+                                    España
+                                </option>
+
+                                <option value="Europa">
+                                    Europa
+                                </option>
+
+                                <option value="Internacional">
+                                    Internacional
+                                </option>
+
+                                <option value="España + Internacional">
+                                    España + Internacional
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+
+                        <!-- Modalidad -->
+
+                        <div class="form-group">
+
+                            <label for="workType">
+                                Modalidad preferida
+                            </label>
+
+                            <select
+                                id="workType"
+                                name="workType"
+                            >
+
+                                <option value="">
+                                    Selecciona una opción
+                                </option>
+
+                                <option value="Remoto">
+                                    100% remoto
+                                </option>
+
+                                <option value="Híbrido">
+                                    Híbrido
+                                </option>
+
+                                <option value="Freelance">
+                                    Freelance / Proyectos
+                                </option>
+
+                                <option value="Cualquiera">
+                                    Cualquiera
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ========================================
+                     PASO 2
+                ========================================= -->
+
+                <section
+                    class="analysis-step"
+                    id="stepProfile"
+                >
+
+                    <div class="step-header">
+
+                        <div class="step-number">
+                            2
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Tu perfil real
+                            </h3>
+
+                            <p>
+                                Añade únicamente conocimientos y habilidades
+                                que realmente puedas demostrar.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Aviso de honestidad -->
+
+                    <div class="honesty-notice">
+
+                        <div class="notice-icon">
+                            🎯
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                Regla de honestidad
+                            </strong>
+
+                            <p>
+                                RadarTeletrabajo puede ayudarte a identificar
+                                palabras clave y mejorar la presentación de tu
+                                perfil, pero nunca debería inventar experiencia
+                                o conocimientos que no posees.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Habilidades -->
+
+                    <div class="form-group">
+
+                        <label for="skillsInput">
+
+                            Habilidades y herramientas
+
+                        </label>
+
+
+                        <div class="skills-input-wrapper">
+
+                            <input
+                                type="text"
+                                id="skillsInput"
+                                placeholder="Ej. Linux, Docker, Python..."
+                            >
+
+                            <button
+                                type="button"
+                                id="addSkill"
+                                class="btn btn-secondary"
+                            >
+
+                                Añadir
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Contenedor de etiquetas -->
+
+                        <div
+                            class="skills-list"
+                            id="skillsList"
+                            aria-live="polite"
+                        >
+
+                            <!-- Las habilidades se añadirán dinámicamente -->
+
+                        </div>
+
+
+                        <small>
+                            Escribe una habilidad y pulsa Enter o "Añadir".
+                        </small>
+
+                    </div>
+
+
+
+                    <!-- Idiomas -->
+
+                    <div class="form-group">
+
+                        <label for="languages">
+
+                            Idiomas
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="languages"
+                            name="languages"
+                            placeholder="Ej. Español nativo, Inglés B2"
+                        >
+
+                    </div>
+
+
+
+                    <!-- Información adicional -->
+
+                    <div class="form-group">
+
+                        <label for="profileNotes">
+
+                            Información adicional sobre tu perfil
+
+                        </label>
+
+                        <textarea
+                            id="profileNotes"
+                            name="profileNotes"
+                            rows="5"
+                            placeholder="Experiencia, proyectos personales, certificaciones, estudios o cualquier información relevante..."
+                        ></textarea>
+
+                    </div>
+
+                </section>
+
+
+
+                <!-- ========================================
+                     PASO 3
+                ========================================= -->
+
+                <section
+                    class="analysis-step"
+                    id="stepJobs"
+                >
+
+                    <div class="step-header">
+
+                        <div class="step-number">
+                            3
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Escanea el mercado
+                            </h3>
+
+                            <p>
+                                Pega entre 3 y 5 ofertas de trabajo que
+                                realmente te interesen.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="jobs-introduction">
+
+                        <p>
+
+                            No necesitas aplicar todavía. El objetivo es
+                            encontrar patrones: tecnologías, requisitos,
+                            condiciones, salarios y señales de alerta.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Contenedor dinámico de ofertas -->
+
+                    <div
+                        class="job-offers"
+                        id="jobOffers"
+                    >
+
+
+                        <!-- OFERTA 1 -->
+
+                        <article
+                            class="job-offer"
+                            data-job-number="1"
+                        >
+
+                            <div class="job-offer-header">
+
+                                <h4>
+                                    📄 Oferta 1
+                                </h4>
+
+                            </div>
+
+
+                            <textarea
+                                class="job-description"
+                                rows="10"
+                                placeholder="Pega aquí el texto completo de la oferta..."
+                            ></textarea>
+
+                        </article>
+
+
+
+                        <!-- OFERTA 2 -->
+
+                        <article
+                            class="job-offer"
+                            data-job-number="2"
+                        >
+
+                            <div class="job-offer-header">
+
+                                <h4>
+                                    📄 Oferta 2
+                                </h4>
+
+                            </div>
+
+
+                            <textarea
+                                class="job-description"
+                                rows="10"
+                                placeholder="Pega aquí el texto completo de la oferta..."
+                            ></textarea>
+
+                        </article>
+
+
+
+                        <!-- OFERTA 3 -->
+
+                        <article
+                            class="job-offer"
+                            data-job-number="3"
+                        >
+
+                            <div class="job-offer-header">
+
+                                <h4>
+                                    📄 Oferta 3
+                                </h4>
+
+                            </div>
+
+
+                            <textarea
+                                class="job-description"
+                                rows="10"
+                                placeholder="Pega aquí el texto completo de la oferta..."
+                            ></textarea>
+
+                        </article>
+
+
+                    </div>
+
+
+
+                    <!-- Añadir oferta -->
+
+                    <button
+                        type="button"
+                        class="btn btn-outline"
+                        id="addJobOffer"
+                    >
+
+                        + Añadir otra oferta
+
+                    </button>
+
+
+                    <p class="jobs-limit">
+                        Máximo: 5 ofertas
+                    </p>
+
+                </section>
+
+
+
+                <!-- ========================================
+                     PASO 4
+                ========================================= -->
+
+                <section
+                    class="analysis-step analysis-step-final"
+                    id="stepGenerate"
+                >
+
+                    <div class="step-header">
+
+                        <div class="step-number">
+                            4
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Genera tu análisis
+                            </h3>
+
+                            <p>
+                                RadarTeletrabajo organizará toda la información
+                                y construirá un prompt listo para utilizar con
+                                una IA.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <button
+                        type="button"
+                        class="btn btn-generate"
+                        id="generatePrompt"
+                    >
+
+                        <span class="generate-icon">
+                            ⚡
+                        </span>
+
+                        Generar mi Prompt de Análisis
+
+                    </button>
+
+
+
+                    <!-- Mensajes de validación -->
+
+                    <div
+                        class="form-message"
+                        id="formMessage"
+                        aria-live="polite"
+                    ></div>
+
+                </section>
+
+
+
+                <!-- ========================================
+                     RESULTADO
+                ========================================= -->
+
+                <section
+                    class="prompt-result"
+                    id="promptResult"
+                    hidden
+                >
+
+
+                    <div class="result-header">
+
+                        <div>
+
+                            <span class="section-eyebrow">
+                                PROMPT GENERADO
+                            </span>
+
+                            <h2>
+                                Tu radar está listo
+                            </h2>
+
+                        </div>
+
+
+                        <div class="result-status">
+
+                            <span class="status-dot"></span>
+
+                            Preparado
+
+                        </div>
+
+                    </div>
+
+
+
+                    <p class="result-description">
+
+                        Copia este prompt y pégalo en tu herramienta de
+                        Inteligencia Artificial preferida junto con las
+                        ofertas seleccionadas.
+
+                    </p>
+
+
+
+                    <!-- Prompt -->
+
+                    <div class="prompt-box">
+
+                        <textarea
+                            id="generatedPrompt"
+                            readonly
+                            rows="25"
+                        ></textarea>
+
+                    </div>
+
+
+
+                    <!-- Acciones -->
+
+                    <div class="result-actions">
+
+                        <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="copyPrompt"
+                        >
+
+                            📋 Copiar Prompt
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="resetForm"
+                        >
+
+                            ↻ Nuevo análisis
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- Nota final -->
+
+                    <div class="result-note">
+
+                        <strong>
+                            🧠 Recuerda:
+                        </strong>
+
+                        La IA puede detectar patrones y ayudarte a comunicar
+                        mejor tu experiencia, pero tú decides qué información
+                        representa realmente tu perfil.
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ========================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-brand">
+
+                🛰️ <strong>RadarTeletrabajo</strong>
+
+            </div>
+
+
+            <p>
+
+                Una herramienta gratuita para analizar el mercado laboral
+                remoto antes de enviar tu candidatura.
+
+            </p>
+
+
+            <small>
+
+                Proyecto desarrollado dentro de la iniciativa
+                <strong>Ruta TI</strong>.
+
+            </small>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

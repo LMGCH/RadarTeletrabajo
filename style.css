@@ -1,0 +1,1055 @@
+/* =========================================================
+   RADAR TELETRABAJO
+   Hoja de estilos principal
+   ========================================================= */
+
+
+/* =========================================================
+   1. VARIABLES
+   ========================================================= */
+
+:root {
+    --bg: #f6f8fc;
+    --bg-soft: #eef3fb;
+    --surface: #ffffff;
+    --surface-hover: #f9fbff;
+
+    --text: #1d2939;
+    --text-secondary: #667085;
+    --text-light: #98a2b3;
+
+    --primary: #2563eb;
+    --primary-hover: #1d4ed8;
+    --primary-soft: #eff6ff;
+
+    --violet: #7c3aed;
+    --violet-soft: #f5f3ff;
+
+    --success: #16a34a;
+    --success-soft: #f0fdf4;
+
+    --warning: #d97706;
+    --warning-soft: #fffbeb;
+
+    --danger: #dc2626;
+    --danger-soft: #fef2f2;
+
+    --border: #e4e7ec;
+    --border-strong: #d0d5dd;
+
+    --shadow-sm: 0 1px 2px rgba(16, 24, 40, 0.04);
+    --shadow-md: 0 8px 24px rgba(16, 24, 40, 0.08);
+    --shadow-lg: 0 20px 40px rgba(16, 24, 40, 0.10);
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    --transition: 0.2s ease;
+}
+
+
+/* =========================================================
+   2. RESET Y BASE
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(37, 99, 235, 0.06),
+            transparent 30%
+        ),
+        var(--bg);
+
+    color: var(--text);
+
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   3. CONTENEDOR GENERAL
+   ========================================================= */
+
+.container {
+    width: min(1120px, calc(100% - 40px));
+    margin-inline: auto;
+}
+
+
+/* =========================================================
+   4. HEADER
+   ========================================================= */
+
+.site-header {
+    background: rgba(255, 255, 255, 0.88);
+
+    border-bottom: 1px solid var(--border);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    backdrop-filter: blur(14px);
+}
+
+
+.header-container {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--text);
+    text-decoration: none;
+}
+
+
+.brand-icon {
+    width: 42px;
+    height: 42px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--primary-soft);
+
+    border-radius: 14px;
+
+    font-size: 1.3rem;
+}
+
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: 750;
+    letter-spacing: -0.02em;
+}
+
+
+.brand-name span {
+    color: var(--primary);
+}
+
+
+.version {
+    padding: 5px 10px;
+
+    background: var(--bg-soft);
+
+    border: 1px solid var(--border);
+
+    border-radius: 999px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   5. HERO
+   ========================================================= */
+
+.hero {
+    padding: 96px 0 72px;
+}
+
+
+.hero-content {
+    max-width: 760px;
+}
+
+
+.hero-badge {
+    width: fit-content;
+
+    margin-bottom: 24px;
+    padding: 7px 13px;
+
+    background: var(--violet-soft);
+
+    border: 1px solid #ddd6fe;
+
+    border-radius: 999px;
+
+    color: var(--violet);
+
+    font-size: 0.85rem;
+    font-weight: 650;
+}
+
+
+.hero h1 {
+    max-width: 850px;
+
+    font-size: clamp(2.6rem, 7vw, 5rem);
+
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+
+    font-weight: 750;
+}
+
+
+.hero h1 span {
+    display: block;
+
+    color: var(--primary);
+}
+
+
+.hero-description {
+    max-width: 680px;
+
+    margin-top: 28px;
+
+    color: var(--text-secondary);
+
+    font-size: 1.15rem;
+}
+
+
+.hero .btn {
+    margin-top: 34px;
+}
+
+
+/* =========================================================
+   6. BOTONES
+   ========================================================= */
+
+.btn {
+    min-height: 46px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 11px 18px;
+
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+
+    font: inherit;
+    font-weight: 650;
+
+    cursor: pointer;
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        border var(--transition),
+        box-shadow var(--transition);
+}
+
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+
+.btn:active {
+    transform: translateY(0);
+}
+
+
+.btn-primary {
+    background: var(--primary);
+
+    color: white;
+
+    box-shadow:
+        0 4px 12px rgba(37, 99, 235, 0.20);
+}
+
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+
+    box-shadow:
+        0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+
+.btn-secondary {
+    background: var(--surface);
+
+    border-color: var(--border-strong);
+
+    color: var(--text);
+}
+
+
+.btn-secondary:hover {
+    background: var(--surface-hover);
+
+    border-color: #b8c0cc;
+}
+
+
+.btn-outline {
+    background: transparent;
+
+    border-color: var(--primary);
+
+    color: var(--primary);
+}
+
+
+.btn-outline:hover {
+    background: var(--primary-soft);
+}
+
+
+.btn-generate {
+    width: 100%;
+    min-height: 60px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--violet)
+    );
+
+    color: white;
+
+    font-size: 1.05rem;
+
+    box-shadow:
+        0 12px 30px rgba(79, 70, 229, 0.20);
+}
+
+
+.btn-generate:hover {
+    box-shadow:
+        0 16px 36px rgba(79, 70, 229, 0.28);
+}
+
+
+.generate-icon {
+    font-size: 1.2rem;
+}
+
+
+/* =========================================================
+   7. SECCIÓN PRINCIPAL
+   ========================================================= */
+
+.analysis-section {
+    padding: 72px 0 100px;
+}
+
+
+.section-heading {
+    max-width: 720px;
+
+    margin-bottom: 48px;
+}
+
+
+.section-eyebrow {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: var(--primary);
+
+    font-size: 0.75rem;
+    font-weight: 750;
+
+    letter-spacing: 0.08em;
+}
+
+
+.section-heading h2,
+.result-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+
+    letter-spacing: -0.04em;
+
+    line-height: 1.15;
+}
+
+
+.section-heading p {
+    margin-top: 14px;
+
+    color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   8. PASOS DEL FORMULARIO
+   ========================================================= */
+
+.analysis-step {
+    margin-bottom: 28px;
+    padding: 32px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        box-shadow var(--transition),
+        transform var(--transition);
+}
+
+
+.analysis-step:hover {
+    box-shadow: var(--shadow-md);
+}
+
+
+.step-header {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+
+    margin-bottom: 28px;
+}
+
+
+.step-number {
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--primary-soft);
+
+    border-radius: 12px;
+
+    color: var(--primary);
+
+    font-weight: 750;
+}
+
+
+.step-header h3 {
+    font-size: 1.25rem;
+
+    letter-spacing: -0.02em;
+}
+
+
+.step-header p {
+    margin-top: 3px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   9. FORMULARIOS
+   ========================================================= */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+
+.form-group-full {
+    grid-column: 1 / -1;
+}
+
+
+label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--text);
+
+    font-size: 0.92rem;
+    font-weight: 650;
+}
+
+
+input,
+select,
+textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border-strong);
+
+    border-radius: var(--radius-sm);
+
+    color: var(--text);
+
+    font: inherit;
+
+    outline: none;
+
+    transition:
+        border var(--transition),
+        box-shadow var(--transition),
+        background var(--transition);
+}
+
+
+input:hover,
+select:hover,
+textarea:hover {
+    border-color: #b8c0cc;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 4px rgba(37, 99, 235, 0.10);
+}
+
+
+textarea {
+    resize: vertical;
+
+    min-height: 110px;
+}
+
+
+small {
+    display: block;
+
+    margin-top: 6px;
+
+    color: var(--text-light);
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   10. AVISO DE HONESTIDAD
+   ========================================================= */
+
+.honesty-notice {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-bottom: 28px;
+    padding: 18px;
+
+    background: var(--primary-soft);
+
+    border: 1px solid #dbeafe;
+
+    border-radius: var(--radius-sm);
+}
+
+
+.notice-icon {
+    font-size: 1.35rem;
+}
+
+
+.honesty-notice strong {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-size: 0.95rem;
+}
+
+
+.honesty-notice p {
+    color: var(--text-secondary);
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   11. HABILIDADES
+   ========================================================= */
+
+.skills-input-wrapper {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.skills-input-wrapper input {
+    flex: 1;
+}
+
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 14px;
+
+    min-height: 4px;
+}
+
+
+.skill-tag {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 10px;
+
+    background: var(--violet-soft);
+
+    border: 1px solid #ddd6fe;
+
+    border-radius: 999px;
+
+    color: #6d28d9;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+
+.skill-remove {
+    border: none;
+
+    background: transparent;
+
+    color: inherit;
+
+    font-size: 1rem;
+
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   12. OFERTAS
+   ========================================================= */
+
+.jobs-introduction {
+    margin-bottom: 24px;
+    padding: 16px 18px;
+
+    background: var(--bg-soft);
+
+    border-radius: var(--radius-sm);
+
+    color: var(--text-secondary);
+
+    font-size: 0.92rem;
+}
+
+
+.job-offers {
+    display: grid;
+
+    gap: 18px;
+
+    margin-bottom: 20px;
+}
+
+
+.job-offer {
+    padding: 20px;
+
+    background: var(--surface-hover);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-sm);
+}
+
+
+.job-offer-header {
+    margin-bottom: 12px;
+}
+
+
+.job-offer-header h4 {
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   13. RESULTADO
+   ========================================================= */
+
+.prompt-result {
+    margin-top: 52px;
+    padding: 34px;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-md);
+}
+
+
+.result-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+
+.result-status {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 8px;
+
+    padding: 7px 11px;
+
+    background: var(--success-soft);
+
+    border-radius: 999px;
+
+    color: var(--success);
+
+    font-size: 0.82rem;
+    font-weight: 650;
+}
+
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+
+    background: currentColor;
+
+    border-radius: 50%;
+}
+
+
+.result-description {
+    margin: 20px 0;
+
+    color: var(--text-secondary);
+}
+
+
+.prompt-box textarea {
+    min-height: 450px;
+
+    padding: 20px;
+
+    background: #fbfcfe;
+
+    border-color: var(--border);
+
+    font-family:
+        "SFMono-Regular",
+        Consolas,
+        "Liberation Mono",
+        monospace;
+
+    font-size: 0.85rem;
+
+    line-height: 1.65;
+}
+
+
+.result-actions {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.result-note {
+    margin-top: 24px;
+    padding: 16px;
+
+    background: var(--violet-soft);
+
+    border-radius: var(--radius-sm);
+
+    color: var(--text-secondary);
+
+    font-size: 0.9rem;
+}
+
+
+.result-note strong {
+    color: var(--text);
+}
+
+
+/* =========================================================
+   14. MENSAJES DEL FORMULARIO
+   ========================================================= */
+
+.form-message {
+    display: none;
+
+    margin-top: 18px;
+    padding: 14px 16px;
+
+    border-radius: var(--radius-sm);
+
+    font-size: 0.9rem;
+}
+
+
+.form-message.show {
+    display: block;
+}
+
+
+.form-message.error {
+    background: var(--danger-soft);
+
+    border: 1px solid #fecaca;
+
+    color: var(--danger);
+}
+
+
+.form-message.success {
+    background: var(--success-soft);
+
+    border: 1px solid #bbf7d0;
+
+    color: var(--success);
+}
+
+
+/* =========================================================
+   15. FOOTER
+   ========================================================= */
+
+.site-footer {
+    padding: 48px 0;
+
+    background: var(--surface);
+
+    border-top: 1px solid var(--border);
+
+    text-align: center;
+}
+
+
+.footer-brand {
+    margin-bottom: 8px;
+
+    font-size: 1.05rem;
+}
+
+
+.site-footer p {
+    max-width: 520px;
+
+    margin: 0 auto 14px;
+
+    color: var(--text-secondary);
+
+    font-size: 0.9rem;
+}
+
+
+.site-footer small {
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   16. ACCESIBILIDAD
+   ========================================================= */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.35);
+    outline-offset: 3px;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+
+}
+
+
+/* =========================================================
+   17. RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: min(100% - 28px, 1120px);
+    }
+
+
+    .hero {
+        padding: 64px 0 48px;
+    }
+
+
+    .hero h1 {
+        font-size: clamp(2.4rem, 12vw, 4rem);
+    }
+
+
+    .analysis-section {
+        padding-top: 48px;
+    }
+
+
+    .analysis-step {
+        padding: 24px 20px;
+    }
+
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-group-full {
+        grid-column: auto;
+    }
+
+
+    .result-header {
+        flex-direction: column;
+    }
+
+
+    .prompt-result {
+        padding: 24px 20px;
+    }
+
+}
+
+
+@media (max-width: 520px) {
+
+    .header-container {
+        min-height: 64px;
+    }
+
+
+    .brand-icon {
+        width: 38px;
+        height: 38px;
+    }
+
+
+    .brand-name {
+        font-size: 1rem;
+    }
+
+
+    .skills-input-wrapper {
+        flex-direction: column;
+    }
+
+
+    .skills-input-wrapper .btn {
+        width: 100%;
+    }
+
+
+    .result-actions {
+        flex-direction: column;
+    }
+
+
+    .result-actions .btn {
+        width: 100%;
+    }
+
+
+    .btn-generate {
+        font-size: 0.95rem;
+    }
+
+}
+
