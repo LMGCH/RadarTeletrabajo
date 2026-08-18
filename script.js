@@ -639,7 +639,7 @@ ${workType}
 MI PERFIL REAL
 ==================================================
 
-HABILIDADES Y HERRAMIENTAS:
+MIS COMPETENCIAS REALES:
 ${formatList(state.skills)}
 
 IDIOMAS:
@@ -655,7 +655,7 @@ TU MISIÓN
 
 Analiza las ofertas que encontrarás a continuación y realiza lo siguiente:
 
-1. Identifica las habilidades, tecnologías y herramientas que aparecen repetidamente.
+1. Identifica las competencias, conocimientos, habilidades, herramientas, metodologías, responsabilidades y requisitos que aparecen repetidamente.
 
 2. Clasifica los requisitos en:
    - Imprescindibles.
@@ -690,6 +690,19 @@ Analiza las ofertas que encontrarás a continuación y realiza lo siguiente:
 
 No supongas que poseo conocimientos que no aparecen en mi perfil.
 
+9. Evalúa también si cada oferta es coherente con mi objetivo profesional,
+mi nivel de experiencia y el tipo de puesto que busco.
+
+Si alguna oferta pertenece claramente a otro perfil profesional,
+especialidad o nivel de seniority, indícalo explícitamente.
+
+No fuerces conclusiones mezclando requisitos de puestos que no sean
+realmente comparables.
+
+Cuando detectes ofertas poco relacionadas con mi objetivo, analízalas
+individualmente, pero evita utilizarlas para definir los requisitos
+generales del perfil que busco.
+
 
 ==================================================
 RESULTADO SOLICITADO
@@ -706,7 +719,7 @@ B. MATRIZ DE COMPATIBILIDAD
 
 Crea una tabla con:
 
-REQUISITO | FRECUENCIA | ¿LO DOMINO? | PRIORIDAD | ACCIÓN RECOMENDADA
+COMPETENCIA O REQUISITO | FRECUENCIA | ¿LO TENGO? | PRIORIDAD | ACCIÓN RECOMENDADA
 
 
 C. HABILIDADES QUE YA PUEDO DESTACAR
@@ -741,6 +754,25 @@ H. MIS 3 PRÓXIMAS ACCIONES
 
 Indica únicamente las tres acciones que probablemente tengan mayor impacto para mejorar mi posición respecto a estas ofertas.
 
+I. COHERENCIA DE LAS OFERTAS
+
+Para cada oferta, indica:
+
+OFERTA | COHERENCIA CON MI OBJETIVO | NIVEL DE EXPERIENCIA | MOTIVO
+
+Clasifica cada una como:
+
+- Alta coherencia.
+- Coherencia parcial.
+- Baja coherencia.
+
+Explica brevemente cualquier diferencia importante entre el puesto,
+mi objetivo profesional y mi nivel actual.
+
+No penalices una oferta simplemente porque represente una oportunidad
+de aprendizaje, pero diferencia claramente entre una oportunidad
+realista para mi perfil y un puesto que requiere una experiencia o
+especialización significativamente superior.
 
 ==================================================
 OFERTAS PARA ANALIZAR
