@@ -683,6 +683,15 @@ Analiza las ofertas que encontrarás a continuación y realiza lo siguiente:
    - Contrato laboral.
    - Contractor o profesional independiente.
    - Employer of Record (EOR), si aparece mencionado.
+   - Distingue claramente entre:
+
+    - Trabajo 100 % remoto.
+    - Trabajo híbrido.
+    - Teletrabajo ocasional o limitado.
+    - Puestos presenciales con alguna flexibilidad.
+
+    - No clasifiques una oferta como remota únicamente porque mencione la
+    posibilidad de teletrabajo.
 
 7. Busca referencias salariales o económicas únicamente cuando estén presentes en las ofertas.
 
@@ -702,6 +711,20 @@ realmente comparables.
 Cuando detectes ofertas poco relacionadas con mi objetivo, analízalas
 individualmente, pero evita utilizarlas para definir los requisitos
 generales del perfil que busco.
+
+10. Analiza el contenido real de la descripción del puesto y no te bases
+únicamente en su título.
+
+Si el título y las responsabilidades describen perfiles diferentes o
+pueden resultar ambiguos, indícalo.
+
+Si alguna oferta contiene información insuficiente, incompleta o no
+incluye una descripción real del puesto, indícalo claramente.
+
+No inventes ni deduzcas requisitos que no aparezcan.
+
+Puedes excluir esa oferta del análisis de patrones generales, indicando
+que no contiene información suficiente para ser comparada correctamente. 
 
 
 ==================================================
